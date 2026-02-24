@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank-GDG-PROJECT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrap">
+    <h1>🐙 git finder</h1>
+    <div class="small-note">user profile + repos – just type a name</div>
+
+
+    <div class="search-row">
+      <div class="input-hold">
+        <input type="text" id="userInput" placeholder="github username e.g. MayankMishra4998" value="MayankMishra4998">
+      </div>
+      <button id="goBtn">search</button>
+    </div>
+
+    <div id="messageBoard" class="msg-box hidden"></div>
+
+    <div id="userProfile" class="profile-card hidden">
+      <img id="profileAvatar" src="" alt="avatar">
+      <div class="info-area">
+        <div class="full-name" id="displayName">loading...</div>
+        <div class="bio-text" id="displayBio"></div>
+        <div class="stats-wrap">
+          <div class="stat-bubble"><span class="num" id="followerCount">0</span> <span class="label">followers</span>
+          </div>
+          <div class="stat-bubble"><span class="num" id="followingCount">0</span> <span class="label">following</span>
+          </div>
+          <div class="stat-bubble"><span class="num" id="repoCountNum">0</span> <span class="label">repos</span></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="repoContainer" class="hidden">
+      <div class="repo-head">
+        <h3>📘 repositories</h3>
+        <span id="repoCountMsg" class="repo-badge"></span>
+      </div>
+      <div id="repoGridArea" class="repo-grid"></div>
+    </div>
+
+
+  <div id="modalOverlay" class="modal-bg hidden">
+    <div class="modal-box" id="modalInner">
+    </div>
+  </div>
+
+  <script src="JS/script.js">
+
+  </script>
+
+</body>
+
+</html>
